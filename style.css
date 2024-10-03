@@ -4,7 +4,11 @@
 }
 .main{
     background-image: url('assest/images/background.jpg');
+    background-position: center center;
     height: 80vh;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    position: relative;
 }
 .main.box{
     height: 80vh;
@@ -13,4 +17,40 @@
     position: absolute;
     background-color: black;
 
+}
+nav{
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+.imgcnt{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+}
+.imgcnt:first-child{
+    font-weight: bolder;
+    font-size: 48px;
+}
+.imgcnt:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.imgcnt:nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
 }
